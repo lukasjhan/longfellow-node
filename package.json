@@ -1,0 +1,20 @@
+{
+  "name": "longfellow-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "configure": "cmake-js configure",
+    "build": "cmake-js build",
+    "rebuild": "cmake-js rebuild",
+    "test": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "cmake-js": "^7.3.1",
+    "node-addon-api": "^8.5.0"
+  }
+}
