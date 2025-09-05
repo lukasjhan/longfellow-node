@@ -2,7 +2,7 @@
 
 ## Build
 
-1. Build and Install Longfellow
+1. Build and Install [Longfellow](https://github.com/google/longfellow-zk)
 
 1.1 prerequisites (ubuntu)
 
