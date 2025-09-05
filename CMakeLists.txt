@@ -17,10 +17,10 @@ string(REPLACE "\"" "" NAPI_INC ${NAPI_INC})
 include_directories(${NAPI_INC})
 add_definitions(-DNAPI_VERSION=8)
 
-# Longfellow 설치 경로(1단계에서 설치한 절대경로로 바꾸세요!)
-set(LF_INSTALL "/home/lukasjhan/longfellow-zk/install")
+# Longfellow 설치 경로
+set(LF_INSTALL "${CMAKE_CURRENT_SOURCE_DIR}/third_party/longfellow-zk/install")
 if(NOT DEFINED LF_INSTALL)
-  message(FATAL_ERROR "Set -DLF_INSTALL=/home/lukasjhan/longfellow-zk/install")
+  message(FATAL_ERROR "Set -DLF_INSTALL=${CMAKE_CURRENT_SOURCE_DIR}/third_party/longfellow-zk/install")
 endif()
 
 include_directories(${LF_INSTALL}/include)
